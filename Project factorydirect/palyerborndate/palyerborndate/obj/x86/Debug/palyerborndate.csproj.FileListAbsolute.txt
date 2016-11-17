@@ -1,0 +1,8 @@
+D:\00_vishal\92_yatin images\palyerborndate\palyerborndate\bin\Debug\htmlagilitypack.dll
+D:\00_vishal\92_yatin images\palyerborndate\palyerborndate\obj\x86\Debug\palyerborndate.Form1.resources
+D:\00_vishal\92_yatin images\palyerborndate\palyerborndate\obj\x86\Debug\palyerborndate.csproj.GenerateResource.Cache
+D:\00_vishal\92_yatin images\palyerborndate\palyerborndate\bin\Debug\warriorsandwonders.exe
+D:\00_vishal\92_yatin images\palyerborndate\palyerborndate\bin\Debug\warriorsandwonders.pdb
+D:\00_vishal\92_yatin images\palyerborndate\palyerborndate\obj\x86\Debug\warriorsandwonders.Properties.Resources.resources
+D:\00_vishal\92_yatin images\palyerborndate\palyerborndate\obj\x86\Debug\warriorsandwonders.exe
+D:\00_vishal\92_yatin images\palyerborndate\palyerborndate\obj\x86\Debug\warriorsandwonders.pdb

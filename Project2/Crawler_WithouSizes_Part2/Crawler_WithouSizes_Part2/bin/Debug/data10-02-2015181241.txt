@@ -1,0 +1,3 @@
+SKU	Product Name	Product Description	Bullet Points	Manufacturer	Brand Name	Price	Currency	In Stock	Image URL	Image URL1	Image URL2	
+				Store 401 games	Store 401 games	59.95	CDN					
+												

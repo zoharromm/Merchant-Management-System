@@ -1,0 +1,3 @@
+SKU	Product Name	Product Description	Bullet Points	Manufacturer	Brand Name	Price	Currency	In Stock	Image URL	Image URL1	Image URL2	
+ST4GAMQT	"Invasion" Titan	"Invasion" Titan		Store 401 games	Store 401 games	0.25	CDN	20	http://store.401games.ca//img/product/id=383192			
+												

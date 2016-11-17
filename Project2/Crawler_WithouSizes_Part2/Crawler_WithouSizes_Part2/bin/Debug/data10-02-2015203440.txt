@@ -1,0 +1,17 @@
+SKU	Product Name	Product Description	Bullet Points	Manufacturer	Brand Name	Price	Currency	In Stock	Image URL	Image URL1	Image URL2	
+ST4GAMIT_1	"Invasion" Titan	"Invasion" Titan		401 Games	401 Games	0.25	CDN	20	http://store.401games.ca//img/product/id=383193			
+ST4GAMA_2	Accelgor	Accelgor		401 Games	401 Games	0.50	CDN	11	http://store.401games.ca//img/product/id=278362			
+ST4GAMAS_3	Accorder's Shield	Accorder's Shield		401 Games	401 Games	0.15	CDN	10	http://store.401games.ca//img/product/id=267496			
+ST4GAMA_4	Accelgor	Accelgor		401 Games	401 Games	1.00	CDN	2	http://store.401games.ca//img/product/id=282432			
+ST4GAMAS_5	Accursed Spirit	Accursed Spirit		401 Games	401 Games	0.15	CDN	7	http://store.401games.ca//img/product/id=269037			
+ST4GAMAS_6	Accorder's Shield	Accorder's Shield		401 Games	401 Games	0.25	CDN	0	http://store.401games.ca//img/product/id=308128			
+ST4GAMAS_7	Acidic Slime	Acidic Slime		401 Games	401 Games	0.25	CDN	20	http://store.401games.ca//img/product/id=387693			
+ST4GAMAOT_8	Act of Treason	Act of Treason2RSorceryGain control of target creature until end of turn. Untap that creature. It gains haste until end of turn. The Sultai take our dead, so we shall take their living! ?Taklai, Mardu ragesingerillus. Min Yum # 95/269		401 Games	401 Games	0.15	CDN	8	http://store.401games.ca//img/product/id=260846			
+ST4GAMAS_9	Acidic Slime	Acidic Slime		401 Games	401 Games	0.50	CDN	20	http://store.401games.ca//img/product/id=389455			
+ST4GAMARA_10	Advanced Ritual Art	Advanced Ritual Art		401 Games	401 Games	0.50	CDN	2	http://store.401games.ca//img/product/id=311052			
+ST4GAMARA_11	Advanced Ritual Art	Advanced Ritual Art		401 Games	401 Games	2.00	CDN	0	http://store.401games.ca//img/product/id=382130			
+ST4GAMARA_12	Advanced Ritual Art	Advanced Ritual Art		401 Games	401 Games	1.00	CDN	10	http://store.401games.ca//img/product/id=294247			
+ST4GAMARF_13	Alomomola (reverse foil)	Alomomola (reverse foil)		401 Games	401 Games	0.25	CDN	3	http://store.401games.ca//img/product/id=289667			
+ST4GAMARF_14	Alomomola (reverse foil)	Alomomola (reverse foil)		401 Games	401 Games	3.00	CDN	0	http://store.401games.ca//img/product/id=337403			
+ST4GAMAF_15	Angel's Feather	Angel's Feather		401 Games	401 Games	0.25	CDN	10	http://store.401games.ca//img/product/id=354124			
+ST4GAMAF_16	Angel's Feather	Angel's Feather		401 Games	401 Games	0.15	CDN	10	http://store.401games.ca//img/product/id=389499			

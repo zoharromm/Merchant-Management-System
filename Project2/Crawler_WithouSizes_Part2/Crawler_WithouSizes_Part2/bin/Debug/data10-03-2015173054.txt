@@ -1,0 +1,2 @@
+SKU	Product Name	Product Description	Bullet Points	Manufacturer	Brand Name	Price	Currency	In Stock	Image URL	Image URL1	Image URL2	
+ST4GAMMSJF_1	Marvel Select - Jane Foster	Marvel Select - Jane Foster		401 Games	401 Games	25.95	CDN	2	http://store.401games.ca//img/product/id=142875	http://store.401games.ca/catalog/4559053/marvel-select---jane-foster		

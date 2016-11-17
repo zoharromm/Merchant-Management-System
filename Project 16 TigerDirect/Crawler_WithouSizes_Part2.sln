@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crawler_WithouSizes_Part2", "Crawler_WithouSizes_Part2\Crawler_WithouSizes_Part2.csproj", "{33024E1E-6A03-4FB1-A639-ED0D35D98298}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "..\Project 1\palyerborndate\BusinessLayer\BusinessLayer.csproj", "{D5D76667-B4DA-401B-BC00-F53EAE0CBA40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33024E1E-6A03-4FB1-A639-ED0D35D98298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33024E1E-6A03-4FB1-A639-ED0D35D98298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33024E1E-6A03-4FB1-A639-ED0D35D98298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33024E1E-6A03-4FB1-A639-ED0D35D98298}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5D76667-B4DA-401B-BC00-F53EAE0CBA40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D76667-B4DA-401B-BC00-F53EAE0CBA40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D76667-B4DA-401B-BC00-F53EAE0CBA40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D76667-B4DA-401B-BC00-F53EAE0CBA40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

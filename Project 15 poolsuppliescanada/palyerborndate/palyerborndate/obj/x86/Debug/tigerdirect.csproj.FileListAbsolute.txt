@@ -1,0 +1,17 @@
+A:\Projects\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 12 tigerdirect\palyerborndate\palyerborndate\bin\Debug\tigerdirect.exe.config
+A:\Projects\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 12 tigerdirect\palyerborndate\palyerborndate\bin\Debug\tigerdirect.exe
+A:\Projects\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 12 tigerdirect\palyerborndate\palyerborndate\bin\Debug\tigerdirect.pdb
+A:\Projects\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 12 tigerdirect\palyerborndate\palyerborndate\bin\Debug\BusinessLayer.dll
+A:\Projects\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 12 tigerdirect\palyerborndate\palyerborndate\bin\Debug\BusinessLayer.pdb
+A:\Projects\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 12 tigerdirect\palyerborndate\palyerborndate\obj\x86\Debug\palyerborndate.Form1.resources
+A:\Projects\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 12 tigerdirect\palyerborndate\palyerborndate\obj\x86\Debug\tigerdirect.Properties.Resources.resources
+A:\Projects\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 12 tigerdirect\palyerborndate\palyerborndate\obj\x86\Debug\tigerdirect.csproj.GenerateResource.Cache
+A:\Projects\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 12 tigerdirect\palyerborndate\palyerborndate\obj\x86\Debug\tigerdirect.exe
+A:\Projects\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 12 tigerdirect\palyerborndate\palyerborndate\obj\x86\Debug\tigerdirect.pdb
+A:\Projects\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 12 tigerdirect\palyerborndate\palyerborndate\bin\Debug\nunit.framework.dll
+A:\Projects\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 12 tigerdirect\palyerborndate\palyerborndate\bin\Debug\WatiN.Core.dll
+A:\Projects\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 12 tigerdirect\palyerborndate\palyerborndate\bin\Debug\WatiN.Core.xml
+A:\Projects\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 13 openaparty\palyerborndate\palyerborndate\bin\Debug\tigerdirect.exe.config
+A:\Projects\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 13 openaparty\palyerborndate\palyerborndate\obj\x86\Debug\tigerdirect.exe
+A:\Projects\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 13 openaparty\palyerborndate\palyerborndate\obj\x86\Debug\tigerdirect.pdb
+A:\Projects\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 13 openaparty\palyerborndate\palyerborndate\bin\Debug\openaparty.exe.config

@@ -1,0 +1,2 @@
+SKU	Product Name	Product Description	Bullet Points	Manufacturer	Brand Name	Price	Currency	In Stock	Image URL	Image URL1	Image URL2	
+ST4GAMMOM_2186	Mansions of Madness	Mansions of Madness		401 Games	401 Games	83.95	CDN	3	http://store.401games.ca//img/product/id=169005	http://store.401games.ca/catalog/2417110/mansions-of-madness		

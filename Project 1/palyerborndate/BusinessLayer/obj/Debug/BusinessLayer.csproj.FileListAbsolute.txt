@@ -1,0 +1,5 @@
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 1\palyerborndate\BusinessLayer\bin\Debug\BusinessLayer.dll.config
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 1\palyerborndate\BusinessLayer\bin\Debug\BusinessLayer.dll
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 1\palyerborndate\BusinessLayer\bin\Debug\BusinessLayer.pdb
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 1\palyerborndate\BusinessLayer\obj\Debug\BusinessLayer.dll
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 1\palyerborndate\BusinessLayer\obj\Debug\BusinessLayer.pdb

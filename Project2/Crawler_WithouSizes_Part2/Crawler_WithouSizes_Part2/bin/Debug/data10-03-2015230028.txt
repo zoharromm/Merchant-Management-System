@@ -1,0 +1,2 @@
+SKU	Product Name	Product Description	Bullet Points	Manufacturer	Brand Name	Price	Currency	In Stock	Image URL	Image URL1	Image URL2	
+ST4GAMAI8R_2182	And, in 850…… (RRR)	And, in 850…… (RRR)		401 Games	401 Games	10.00	CDN	0	http://store.401games.ca//img/product/id=383199			

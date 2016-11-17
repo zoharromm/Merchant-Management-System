@@ -1,0 +1,307 @@
+USE [MarketPlaceHub]
+GO
+/****** Object:  StoredProcedure [dbo].[MarkHub_ScrapeProductMerging]    Script Date: 11/09/2015 23:16:04 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+ALTER  procedure [dbo].[MarkHub_ScrapeProductMerging]
+(
+@StoreName nvarchar(200),
+@Products as SyncProducts readonly
+)
+as
+Begin 
+
+
+
+--INSERT INTO [scarpper].[dbo].[SyncProducts]
+--           ([Rowid]
+--           ,[SKU]
+--           ,[Product Name]
+--           ,[Product Description]
+--           ,[Bullet Points]
+--           ,[Manufacturer]
+--           ,[Brand Name]
+--           ,[Price]
+--           ,[Currency]
+--           ,[In Stock]
+--           ,[Image URL]
+--           ,[URL]
+--           ,[Size]
+--           ,[Color]
+--           ,[Isdefault]
+--           ,[ParentSku])
+     
+--SELECT [Rowid]
+--      ,[SKU]
+--      ,[Product Name]
+--      ,[Product Description]
+--      ,[Bullet Points]
+--      ,[Manufacturer]
+--      ,[Brand Name]
+--      ,[Price]
+--      ,[Currency]
+--      ,[In Stock]
+--      ,[Image URL]
+--      ,[URL]
+--      ,[Size]
+--      ,[Color]
+--      ,[Isdefault]
+--      ,[ParentSku]
+--  FROM @Products
+
+
+/***********Region store name ****************/
+declare @storeid int
+set @storeid=isnull((select storeid from store where storename=@StoreName),0)
+if(@storeid=0)
+begin
+INSERT INTO [dbo].[Store]
+           ([StoreName]
+           ,[StoreType]) values(@StoreName,'scrapper')
+set @storeid=isnull((select storeid from store where storename=@StoreName),0)
+
+end
+
+/****************end**********************************/
+
+
+/***************MarkProduct Out of stock*****************/
+
+Update pv set Inventory=0 from productvariant pv inner join productstore ps
+on  pv.productid=ps.productid where ps.storeid=@storeid
+/***********************End**************************/
+
+/*********************Update previous product data*************/
+UPDATE PV set pv.price=isnull(pr.price,0),
+pv.Inventory=isnull(pr.[in stock],0),pv.[Product Description]=pr.[Product Description]
+,pv.[Bullet Points]=pr.[Bullet Points],pv.[Image URL]=pr.[Image URL],
+pv.Bulletpoints1=pr.Bulletpoints1,
+pv.Bulletpoints2=pr.Bulletpoints2,
+pv.Bulletpoints3=pr.Bulletpoints3,
+pv.Bulletpoints4=pr.Bulletpoints4,
+pv.Bulletpoints5=pr.Bulletpoints5,
+pv.weight=isnull(pr.Weight,0)
+FROM productvariant pv
+join product prd on
+prd.Productid=pv.productid
+join @Products pr on
+pv.SKU=pr.SKU
+join ProductStore ps
+on ps.productid=prd.productid
+--where isnull(prd.Manufacturer,'')=isnull(pr.Manufacturer,'')
+--and isnull(pr.size,'')=isnull(pv.size,'')
+--and isnull(pr.color,'')=isnull(pv.color,'')
+and ps.storeid=@storeid
+
+/****************end*********************************************/
+
+
+
+/***************Insert new variant data of previous products**********************/
+insert into productvariant
+(productid,price,size,color,sku,parentsku,[product description],[Bullet Points]
+,[Image URL],Inventory,Bulletpoints1,Bulletpoints2,Bulletpoints3,Bulletpoints4,Bulletpoints5,isdefault,weight)
+select comination.productid,comination.price,comination.size,comination.color,comination.sku,
+comination.parentsku,comination.[product description],comination.[Bullet Points],comination.[Image URL],
+comination.[in stock],comination.Bulletpoints1,comination.Bulletpoints2,comination.Bulletpoints3,
+comination.Bulletpoints4,comination.Bulletpoints5,0,comination.weight from (
+
+select prd.productid,pr.price,isnull(pr.size,'')as size,isnull(pr.color,'') as color,pr.sku,pr.parentsku,pr.[product description],
+pr.[Bullet Points],pr.[Image URL]
+,isnull(pr.[in stock],0) as [in stock],ISNULL(pr.Bulletpoints1,'') as Bulletpoints1,
+ISNULL(pr.Bulletpoints2,'') as Bulletpoints2,
+ISNULL(pr.Bulletpoints3,'') as Bulletpoints3,
+ISNULL(pr.Bulletpoints4,'') as Bulletpoints4,
+ISNULL(pr.Bulletpoints5,'') as Bulletpoints5,isnull(pr.weight,0) as weight
+ from product prd join @Products
+pr on pr.[product name]=prd.name
+and isnull(pr.manufacturer,'')=isnull(prd.manufacturer,'')
+
+)
+as comination
+left join productvariant pv on comination.productid=pv.productid
+join ProductStore ps
+on ps.productid=comination.productid
+and isnull(comination.size,'')=isnull(pv.size,'')
+and isnull(comination.color,'')=isnull(pv.color,'')
+and comination.SKU=pv.SKU
+ and ps.storeid=@storeid
+ where pv.productid is null
+ and ISNULL(comination.price,0)>0
+ group by  comination.productid,comination.price,comination.size,comination.color,comination.sku,
+comination.parentsku,comination.[product description],comination.[Bullet Points],comination.[Image URL],
+comination.[in stock],comination.Bulletpoints1,comination.Bulletpoints2,
+comination.Bulletpoints3,comination.Bulletpoints4,
+comination.Bulletpoints5,comination.weight
+
+/*********************End*************************************/
+
+/******************Insert new product****************************/
+
+insert into product(name,manufacturer,[Brand Name],url)
+select pr.[product name] ,isnull(pr.manufacturer,''),isnull(pr.[Brand Name],''),pr.url
+from @Products pr left join  
+(
+select pr.manufacturer,prd.name from product prd join @Products
+pr on pr.[product name]=prd.name
+join ProductStore ps
+on ps.productid=prd.productid
+and ps.StoreID=@storeid
+and isnull(pr.manufacturer,'')=isnull(prd.manufacturer,''))as comination
+on 
+pr.[product name]=comination.name
+and isnull(pr.manufacturer,'')=isnull(comination.manufacturer,'')
+where comination.name is null 
+and isnull(pr.[product name],'')!=''
+and isnull(pr.[url],'')!=''
+group by isnull(pr.manufacturer,''),pr.[product name],isnull(pr.[Brand Name],''),pr.url
+
+
+insert into productvariant
+(productid,price,size,color,sku,parentsku,[product description]
+,[Bullet Points],[Image URL],Inventory,Isdefault,Bulletpoints1,Bulletpoints2,Bulletpoints3,Bulletpoints4,Bulletpoints5,weight)
+select comination.productid,comination.price,comination.size,comination.color,comination.sku,
+comination.parentsku,
+comination.[product description]
+,comination.[Bullet Points],comination.[Image URL],comination.[in stock],comination.Isdefault,
+comination.Bulletpoints1,comination.Bulletpoints2,comination.Bulletpoints3,comination.Bulletpoints4,comination.Bulletpoints5,comination.weight from (
+select prd.productid,pr.price,isnull(pr.size,'') as size,isnull(pr.color,'') as color,pr.sku,pr.parentsku,pr.[product description],
+pr.[Bullet Points],pr.[Image URL]
+,isnull(pr.[in stock],0) as [in stock],pr.Isdefault
+,ISNULL(pr.Bulletpoints1,'') as Bulletpoints1,
+ISNULL(pr.Bulletpoints2,'') as Bulletpoints2,
+ISNULL(pr.Bulletpoints3,'') as Bulletpoints3,
+ISNULL(pr.Bulletpoints4,'') as Bulletpoints4,
+ISNULL(pr.Bulletpoints5,'') as Bulletpoints5,isnull(pr.weight,0) as weight
+ from product prd join @Products
+ pr on pr.[product name]=prd.name
+and isnull(pr.manufacturer,'')=isnull(prd.manufacturer,''))as comination
+left join productvariant pv on comination.productid=pv.productid
+
+and isnull(comination.size,'')=isnull(pv.size,'')
+and isnull(comination.color,'')=isnull(pv.color,'')
+and comination.SKU=pv.SKU
+where pv.productid is null
+and ISNULL(comination.price,0)>0
+
+group by 
+comination.productid,comination.price,comination.size,comination.color,comination.sku,
+comination.parentsku,
+comination.[product description]
+,comination.[Bullet Points],comination.[Image URL],comination.[in stock],comination.Isdefault,
+comination.Bulletpoints1,comination.Bulletpoints2,
+comination.Bulletpoints3,comination.Bulletpoints4,
+comination.Bulletpoints5,comination.weight
+/******************End*****************************************/
+
+
+
+/**************Insert into store table *******************/
+
+insert into productstore(productid,storeid)
+select p.Productid,@storeid
+from product p left join
+(select P.productid
+from Product p inner join Productstore ps
+on ps.productid=p.productid) as combination
+on combination.productid=p.productid
+where combination.productid is null
+
+
+/******end********************************************/
+select sku,Name,[Product Description],[Bullet Points],Manufacturer,[Brand Name],Price,Currency,
+Inventory,size,color,parentsku,Parentage,[Variation Theme],[Relationship Type],
+Bulletpoints1,Bulletpoints2,Bulletpoints3,Bulletpoints4,Bulletpoints5,weight,[Image URL1]
+from(
+select   pv.parentsku as  sku,
+P.Name,'' as [Product Description],isnull( pv.[Bullet Points],'') as [Bullet Points],isnull(p.Manufacturer,'') as Manufacturer,
+isnull(p.[Brand Name],'') as [Brand Name],
+null as Price,'' AS Currency,'' as Inventory,'' as size,'' as color,
+ '' as parentsku,
+'parent' as Parentage,
+case when ISNULL(Color ,'')!='' and ISNULL(Size,'')!='' then 'sizecolor' else case when ISNULL(Size,'')!='' then 'size'
+else 'color' end end as [Variation Theme],'' as [Relationship Type],p.ProductID,Isdefault
+,'' as Bulletpoints1
+,'' as Bulletpoints2
+,'' as Bulletpoints3
+,'' as Bulletpoints4
+,'' as Bulletpoints5,'' as weight,'' as [Image URL1]
+
+from Product p join ProductVariant pv
+on pv.ProductID=p.ProductID
+join ProductStore ps
+on ps.productid=p.productid
+where ps.storeid=@storeid
+and pv.Isdefault=1
+and (ISNULL(pv.Color,'')!='' or ISNULL(pv.size,'')!='')
+and isnull(p.[Brand Name],'')!=''
+
+ 
+union
+
+
+select   pv.sku as sku,
+ p.Name + case when isnull(pv.Size,'')=''then'' else '_'+pv.size end
++case when isnull(pv.Color,'')=''then'' else '_'+pv.Color end  as Name
+ ,replace(isnull( pv.[Product Description],''),'â„¢','™') as [Product Description],pv.[Bullet Points],isnull(p.Manufacturer,'') as Manufacturer,
+isnull(p.[Brand Name],'') as [Brand Name],
+pv.Price,'CDN' AS Currency,cast(case when isnull(pv.price,0)=0 then 0 else isnull(pv.inventory,0) end as varchar(100)) as Inventory ,pv.size,pv.color,
+ pv.parentsku  as parentsku,
+'child' as Parentage,
+case when ISNULL(Color ,'')!='' and ISNULL(Size,'')!='' then 'sizecolor' else case when ISNULL(Size,'')!='' then 'size'
+else 'color' end end as [Variation Theme],'variation' as [Relationship Type],p.ProductID,0
+,ISNULL(pv.Bulletpoints1,'') as Bulletpoints1
+,ISNULL(pv.Bulletpoints2,'') as Bulletpoints2
+,ISNULL(pv.Bulletpoints3,'') as Bulletpoints3
+,ISNULL(pv.Bulletpoints4,'') as Bulletpoints4
+,ISNULL(pv.Bulletpoints5,'') as Bulletpoints5
+,case when ISNULL(cast(pv.weight as varchar(20)),'')='' then '' else cast(pv.weight as varchar(20)) end as weight,PV.[Image URL] as [Image URL1]
+from product p inner join  productvariant pv
+on pv.productid=p.productid
+join ProductStore ps
+ on ps.productid=p.productid
+ where ps.storeid=@storeid
+ and ISNULL(p.name,'')!=''  
+ and (ISNULL(pv.Color,'')!='' or ISNULL(pv.size,'')!='')
+and isnull(p.[Brand Name],'')!='' and
+ ISNULL(pv.price,-1)!=-1
+ 
+ 
+ union
+ 
+ select   pv.sku as sku,
+ p.Name  ,replace(isnull( pv.[Product Description],''),'â„¢','™') as [Product Description],pv.[Bullet Points],isnull(p.Manufacturer,'') as Manufacturer,
+isnull(p.[Brand Name],'') as [Brand Name],
+pv.Price,'CDN' AS Currency,cast(case when isnull(pv.price,0)=0 then 0 else isnull(pv.inventory,0) end as varchar(100))  as Inventory ,pv.size,pv.color,
+ ''  as parentsku,
+'' as Parentage,
+'' as [Variation Theme],'' as [Relationship Type],p.ProductID,0
+,ISNULL(pv.Bulletpoints1,'') as Bulletpoints1
+,ISNULL(pv.Bulletpoints2,'') as Bulletpoints2
+,ISNULL(pv.Bulletpoints3,'') as Bulletpoints3
+,ISNULL(pv.Bulletpoints4,'') as Bulletpoints4
+,ISNULL(pv.Bulletpoints5,'') as Bulletpoints5
+,case when ISNULL(cast(pv.weight as varchar(20)),'')='' then '' else cast(pv.weight as varchar(20)) end as weight,PV.[Image URL] as [Image URL1]
+from product p inner join  productvariant pv
+on pv.productid=p.productid
+join ProductStore ps
+ on ps.productid=p.productid
+ where ps.storeid=@storeid
+ and ISNULL(p.name,'')!=''  
+ and ISNULL(pv.Color,'')='' and ISNULL(pv.size,'')=''
+and isnull(p.[Brand Name],'')!='' and
+ ISNULL(pv.price,-1)!=-1) Combination
+ order by ProductID,Isdefault desc
+  
+
+
+
+end
+
+
+

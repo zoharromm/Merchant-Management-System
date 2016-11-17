@@ -1,0 +1,9 @@
+SKU	Product Name	Product Description	Bullet Points	Manufacturer	Brand Name	Price	Currency	In Stock	Image URL	Image URL1	Image URL2	
+ST4GAMAATJDF_28	Arkham Asylum - Titan Joker Deluxe Figure	Arkham Asylum - Titan Joker Deluxe Figure		Action Figures &amp; Apparel	Action Figures &amp; Apparel	72.95	CDN	2	http://store.401games.ca//img/product/id=172778			
+ST4GAMANOES2RFF_2	A Nightmare on Elm Street 2 - Retro Figure Freddy	A Nightmare on Elm Street 2 - Retro Figure Freddy		Action Figures &amp; Apparel	Action Figures &amp; Apparel	41.95	CDN	1	http://store.401games.ca//img/product/id=329815			
+ST4GAMACMHHQ2_31	Arkham City - Mr Hammer & Harley Quinn 2-Pack	Arkham City - Mr Hammer & Harley Quinn 2-Pack		Action Figures &amp; Apparel	Action Figures &amp; Apparel	39.95	CDN	0	http://store.401games.ca//img/product/id=172802			
+ST4GAMACDHVX_13	Aliens - Corporal Dwayne Hicks vs XenomorphWarrior	Aliens - Corporal Dwayne Hicks vs XenomorphWarrior		Action Figures &amp; Apparel	Action Figures &amp; Apparel	37.95	CDN	16	http://store.401games.ca//img/product/id=134668			
+ST4GAMACTAGS_35	Arkham City Talia Al Ghul S4	Arkham City Talia Al Ghul S4		Action Figures &amp; Apparel	Action Figures &amp; Apparel	21.95	CDN	0	http://store.401games.ca//img/product/id=204963			
+ST4GAMASIPFM_18	Always Sunny in Philadelphia - Flipadelphia MED	Always Sunny in Philadelphia - Flipadelphia MED		Action Figures &amp; Apparel	Action Figures &amp; Apparel	18.95	CDN	1	http://store.401games.ca//img/product/id=231781			
+ST4GAMATMP_6	Adventure Time - Marceline Plush	Adventure Time - Marceline Plush		Action Figures &amp; Apparel	Action Figures &amp; Apparel	16.95	CDN	2	http://store.401games.ca//img/product/id=197483			
+ST4GAMAWW_24	Ant-Man Wacky Wobbler	Ant-Man Wacky Wobbler		Action Figures &amp; Apparel	Action Figures &amp; Apparel	16.95	CDN	10	http://store.401games.ca//img/product/id=384922			

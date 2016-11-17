@@ -1,0 +1,5 @@
+SKU	Product Name	Product Description	Bullet Points	Manufacturer	Brand Name	Price	Currency	In Stock	Image URL	Image URL1	Image URL2	
+ST4GAMAORPAK_38	Arkham Origins - Robin Play Arts Kai	Arkham Origins - Robin Play Arts Kai		Action Figures &amp; Apparel	Action Figures &amp; Apparel	109.95	CDN	1	http://store.401games.ca//img/product/id=314157			
+ST4GAMBTABS_29745	Bishoujo - Tekken Alisa Bosconovitch Statue	Bishoujo - Tekken Alisa Bosconovitch Statue		Action Figures &amp; Apparel	Action Figures &amp; Apparel	67.95	CDN	0	http://store.401games.ca//img/product/id=173315			
+ST4GAMANOES2RFF_2	A Nightmare on Elm Street 2 - Retro Figure Freddy	A Nightmare on Elm Street 2 - Retro Figure Freddy		Action Figures &amp; Apparel	Action Figures &amp; Apparel	41.95	CDN	1	http://store.401games.ca//img/product/id=329815			
+ST4GAMBVLBX_111	Batman - Vintage Logo Blue - XL	Batman - Vintage Logo Blue - XL		Action Figures &amp; Apparel	Action Figures &amp; Apparel	18.95	CDN	1	http://store.401games.ca//img/product/id=231908			

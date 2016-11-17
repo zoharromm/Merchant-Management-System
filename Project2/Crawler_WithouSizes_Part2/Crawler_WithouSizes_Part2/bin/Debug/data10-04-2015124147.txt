@@ -1,0 +1,3 @@
+SKU	Product Name	Product Description	Bullet Points	Manufacturer	Brand Name	Price	Currency	In Stock	Image URL	Image URL1	Image URL2	
+ST4GAMCSGSS_2183	<<Cait Sith>> Girl, Silica (Signed)	Cait Sith Girl, Silica (Signed)		401 Games	401 Games	130.00	CDN	0	http://store.401games.ca//img/product/id=290327			
+ST4GAMYLOTVBP_2184	Yugioh Legacy Of The Valiant Booster Pack	Yugioh Legacy Of The Valiant Booster Pack		401 Games	401 Games	3.54	CDN	30	http://store.401games.ca//img/product/id=202372			

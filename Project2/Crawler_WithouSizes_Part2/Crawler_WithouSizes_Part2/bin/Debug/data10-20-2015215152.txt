@@ -1,0 +1,2 @@
+SKU	Product Name	Product Description	Bullet Points	Manufacturer	Brand Name	Price	Currency	In Stock	Image URL	Image URL1	Image URL2	
+ST4GAMANOES2RFF_2	A Nightmare on Elm Street 2 - Retro Figure Freddy	A Nightmare on Elm Street 2 - Retro Figure Freddy		Action Figures &amp; Apparel	Action Figures &amp; Apparel	41.95	CDN	1	http://store.401games.ca//img/product/id=329815			

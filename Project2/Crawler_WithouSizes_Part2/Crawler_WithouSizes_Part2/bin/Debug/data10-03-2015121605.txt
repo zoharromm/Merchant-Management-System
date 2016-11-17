@@ -1,0 +1,3 @@
+SKU	Product Name	Product Description	Bullet Points	Manufacturer	Brand Name	Price	Currency	In Stock	Image URL	Image URL1	Image URL2	
+ST4GAMMSIM_617	Marvel Select - Iron Man	Marvel Select - Iron Man		401 Games	401 Games	26.95	CDN	4	http://store.401games.ca//img/product/id=179320			
+ST4GAMMSJF_616	Marvel Select - Jane Foster	Marvel Select - Jane Foster		401 Games	401 Games	25.95	CDN	2	http://store.401games.ca//img/product/id=142875			

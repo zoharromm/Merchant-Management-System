@@ -1,0 +1,2 @@
+SKU	Product Name	Product Description	Bullet Points	Manufacturer	Brand Name	Price	Currency	In Stock	Image URL	Image URL1	Image URL2	Condition	
+810HEN021	 ECO SHOPPING BAG	 ECO SHOPPING BAG	<ul>	HENRYS	HENRYS	1.00	CDN	5	http://az163874.vo.msecnd.net/143c9f515cff4d86ab6f0969faac3792/Images/Products61526-1300x1300-712371.jpg	http://az163874.vo.msecnd.net/143c9f515cff4d86ab6f0969faac3792/Images/Products61526-1300x1300-712374.jpg	http://az163874.vo.msecnd.net/143c9f515cff4d86ab6f0969faac3792/Images/Products61526-1300x1300-712377.jpg	New	

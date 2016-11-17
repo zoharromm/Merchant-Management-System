@@ -1,0 +1,3 @@
+SKU	Product Name	Product Description	Bullet Points	Manufacturer	Brand Name	Price	Currency	In Stock	Image URL	Image URL1	Image URL2	
+ST4GAMLDA_5816	<<ALO>> Days, Asuna	<<ALO>> Days, Asuna		401 Games	401 Games	0.25	CDN	30	http://store.401games.ca//img/product/id=328042			
+												

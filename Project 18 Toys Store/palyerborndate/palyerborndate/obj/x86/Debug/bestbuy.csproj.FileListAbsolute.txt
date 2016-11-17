@@ -1,0 +1,15 @@
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 10 Buy.ca\palyerborndate\palyerborndate\bin\Debug\bestbuy.exe.config
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 10 Buy.ca\palyerborndate\palyerborndate\bin\Debug\bestbuy.exe
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 10 Buy.ca\palyerborndate\palyerborndate\bin\Debug\bestbuy.pdb
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 10 Buy.ca\palyerborndate\palyerborndate\bin\Debug\BusinessLayer.dll
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 10 Buy.ca\palyerborndate\palyerborndate\bin\Debug\Newtonsoft.Json.dll
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 10 Buy.ca\palyerborndate\palyerborndate\bin\Debug\BusinessLayer.pdb
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 10 Buy.ca\palyerborndate\palyerborndate\obj\x86\Debug\bestbuy.csprojResolveAssemblyReference.cache
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 10 Buy.ca\palyerborndate\palyerborndate\obj\x86\Debug\palyerborndate.Form1.resources
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 10 Buy.ca\palyerborndate\palyerborndate\obj\x86\Debug\bestbuy.Properties.Resources.resources
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 10 Buy.ca\palyerborndate\palyerborndate\obj\x86\Debug\bestbuy.csproj.GenerateResource.Cache
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 10 Buy.ca\palyerborndate\palyerborndate\obj\x86\Debug\bestbuy.exe
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 10 Buy.ca\palyerborndate\palyerborndate\obj\x86\Debug\bestbuy.pdb
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 18 Toys Store\palyerborndate\palyerborndate\bin\Debug\bestbuy.exe.config
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 18 Toys Store\palyerborndate\palyerborndate\obj\x86\Debug\bestbuy.exe
+F:\00_vishal\Live production website\05_fiverr\41_crawler_warrior\Scrapper Without Sizes\Scrappper\Project 18 Toys Store\palyerborndate\palyerborndate\obj\x86\Debug\bestbuy.pdb
